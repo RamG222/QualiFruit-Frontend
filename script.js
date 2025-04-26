@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formData = new FormData();
     formData.append("file", file);
 
-    fetch("https://qualifruit.info/api/predict", {
+    fetch("http://138.199.209.238:5000/api/predict", {
       method: "POST",
       body: formData,
     })
